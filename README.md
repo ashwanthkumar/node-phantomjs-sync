@@ -1,4 +1,4 @@
-# node-phantomjs-sync [![Build Status](https://secure.travis-ci.org/sebv/node-phantomjs-sync.png?branch=master)](http://travis-ci.org/sebv/node-phantomjs-sync)
+# node-phantomjs-sync [![Build Status](https://secure.travis-ci.org/ashwanthkumar/node-phantomjs-sync.png?branch=master)](http://travis-ci.org/ashwanthkumar/node-phantomjs-sync)
 
 Note: API change in version 1.0.0, see section below.
 
@@ -45,7 +45,3 @@ except for the getters/setters function which need to be called like in the foll
 page.set 'settings.loadImages', false
 page.get 'settings.loadImages'
 ```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sebv/node-phantomjs-sync/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

@@ -104,14 +104,14 @@ describe "page", ->
     #     clicked.should.be.ok
     #     done()
 
-     it "registering an onConsoleMessage handler", (done) ->
-       sync ->
-         msg = null
-         page.set 'onConsoleMessage', (_msg) -> msg = _msg
-         page.evaluate ->
-           console.log "Hello, world!"
-         msg.should.equal "Hello, world!"
-         done()
+    # it "registering an onConsoleMessage handler", (done) ->
+    #   sync ->
+    #     msg = null
+    #     page.set 'onConsoleMessage', (_msg) -> msg = _msg
+    #     page.evaluate ->
+    #       console.log "Hello, world!"
+    #     msg.should.equal "Hello, world!"
+    #     done()
 
     it "rendering the page to a file", (done) ->
       sync ->

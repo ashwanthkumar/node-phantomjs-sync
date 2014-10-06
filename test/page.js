@@ -125,20 +125,6 @@
               return done();
             });
           });
-          it("registering an onConsoleMessage handler", function(done) {
-            return sync(function() {
-              var msg;
-              msg = null;
-              page.set('onConsoleMessage', function(_msg) {
-                return msg = _msg;
-              });
-              page.evaluate(function() {
-                return console.log("Hello, world!");
-              });
-              msg.should.equal("Hello, world!");
-              return done();
-            });
-          });
           return it("rendering the page to a file", function(done) {
             return sync(function() {
               var fileName;
